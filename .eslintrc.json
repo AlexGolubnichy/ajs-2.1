@@ -3,6 +3,11 @@
         "browser": true,
         "es2021": true
     },
+    "scripts": {
+        "start": "live-server src",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint ."
+    },
     "extends": "airbnb-base",
     "overrides": [
     ],
@@ -10,5 +15,10 @@
         "ecmaVersion": "latest"
     },
     "rules": {
+        "no-restricted-syntax":[
+            "error",
+            "LabeledStatement",
+            "WithStatement"
+        ]
     }
 }
